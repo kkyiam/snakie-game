@@ -7,7 +7,6 @@ COPY game.js /usr/share/nginx/html/
 
 # Copy documentation files (optional, for reference)
 COPY README.md /usr/share/nginx/html/
-COPY CHANGELOG.md /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
