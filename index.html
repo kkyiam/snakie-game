@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakie - Futuristic Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="game-header">
+                <h1 class="title">SNAKIE</h1>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">SCORE</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">HIGH SCORE</span>
+                    <span class="stat-value" id="highScore">0</span>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="startBtn" class="btn">START GAME</button>
+                <button id="pauseBtn" class="btn" disabled>PAUSE</button>
+            </div>
+            
+            <div class="instructions">
+                <p>Use Arrow Keys or WASD to control the snake</p>
+                <p>Press Spacebar to pause</p>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+    
+    <div id="gameOver" class="game-over hidden">
+        <h2>GAME OVER</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button id="restartBtn" class="btn">RESTART</button>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
